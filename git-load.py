@@ -16,11 +16,12 @@ print("file_list: {}".format(file_list_py))
 # 현재 시간 기준 날짜
 time2 = datetime.now()
 count = 0  # 횟수 count
-print((time2 - timedelta(days=169)).strftime('%a %b %d %H:%M:%S %Y'))
+print((time2 - timedelta(days=159)).strftime('%a %b %d %H:%M:%S %Y'))
+# exit(0)
 for i in range(len(file_list_py)):
 # for i in range(5):
     # 날짜 변수
-    what_day = (time2 - timedelta(days=169-i)).strftime('%a %b %d %H:%M:%S %Y')
+    what_day = (time2 - timedelta(days=159-i)).strftime('%a %b %d %H:%M:%S %Y')
     count += 1
     # print(what_day)
     # 파일 로딩
